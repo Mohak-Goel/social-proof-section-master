@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- bootstrap link -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-image: url("images/desktop-background.png");
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 7% 7% 0 7%;
+      margin: 0;
+      font-size: 15px;
+      font-family: 'Spartan', sans-serif;
+    }
+
+    h1 {
+      font-weight: 700;
+    }
+
+    .heading {
+      color: hsl(300, 43%, 22%);
+    }
+
+    .star {
+      background: url('images/icon-star.svg');
+      display: inline-block;
+      height: 16px;
+      width: 17px;
+      margin-top: 2px;
+    }
+
+    .review-section {
+      text-align: right;
+    }
+
+    .review {
+      border-radius: 8px;
+      margin-top: 1rem;
+      color: hsl(300, 43%, 22%);
+      background-color: hsl(300, 24%, 96%);
+      width: 27rem;
+      padding: 1rem 0 1rem 2rem;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .Reviews,
+    .Report,
+    .BestTech {}
+
+    .second-review {
+      margin-right: 3rem;
+    }
+
+    .first-review {
+      margin-right: 6rem;
+    }
+
+    .star-div {
+      height: 16px;
+    }
+
+    .testimonial {
+      margin-top: 75px;
+    }
+
+    /* Card */
+    .card {
+      background-color: hsl(300, 43%, 22%);
+      padding: 10% 8%;
+      border-radius: 8px;
+    }
+
+    .second-card {
+      margin-top: 1rem;
+    }
+
+    .third-card {
+      margin-top: 2rem;
+    }
+
+    .profile-image {
+      width: 3.25rem;
+    }
+
+    .card-text {
+      color: hsl(300, 24%, 96%);
+    }
+
+    .card-title {
+      line-height: 1.2;
+      margin: 13px 0 12px 12px;
+    }
+
+    .card-title p {
+      margin: 0;
+    }
+
+    .card-body {
+      margin-top: 20px;
+    }
+
+    .name {
+      color: #fff;
+    }
+
+    .verified {
+      color: hsl(333, 80%, 67%);
+    }
+
+    @media (max-width:376px) {
+      body {
+        background-image: url("images/mobile-background.svg");
+        padding: 20% 10%;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .heading{
+        text-align: center;
+      }
+
+      .review{
+        padding: 1rem 2%;
+      }
+
+      .first-review {
+        margin-right: 0;
+      }
+
+      .second-review {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width:768px) {
+      .review {
+        text-align: center;
+        width: 100%;
+        padding-left:1rem;
+      }
+
+      .first-review {
+        margin-right: 0;
+      }
+
+      .second-review {
+        margin-right: 0;
+      }
+      .third-card, .second-card{
+        margin-top: 0;
+      }
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid g-0">
+    <div class="row">
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 heading">
+        <h1>10,000+ of our users love our products.</h1>
+        <p>We only provide great products combined with excellent customer service.See what our satisfied customers are saying about our services.</p>
+      </div>
+      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 review-section">
+        <div class="review first-review">
+          <div class="row">
+            <div class="col-md-auto">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <div class="col-md-auto">
+              <span class="Reviews">Rated 5 Stars in Reviews</span>
+            </div>
+          </div>
+        </div>
+        <div class="review second-review">
+          <div class="row">
+            <div class="col-md-auto">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <div class="col-md-auto">
+              <span class="Report">Rated 5 Stars in Report Guru</span>
+            </div>
+          </div>
+        </div>
+        <div class="review third-review">
+          <div class="row">
+            <div class="col-md-auto">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <div class="col-md-auto">
+              <span class="BestTech">Rated 5 Stars in BestTech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimonial">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col gy-0">
+        <div class="card">
+          <div class="row">
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto">
+              <img src="images/image-colton.jpg" class="rounded-circle border-0 profile-image " alt="image-colton">
+            </div>
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto card-title p-0">
+              <p class="name g-0">Colton Smith</p>
+              <p class="verified g-0">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <p class="card-text">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col gy-3">
+        <div class="card second-card">
+          <div class="row">
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto">
+              <img src="images/image-irene.jpg" class="rounded-circle border-0 profile-image " alt="image-colton">
+            </div>
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto card-title p-0">
+              <p class="name g-0">Irene Roberts</p>
+              <p class="verified g-0">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <p class="card-text">"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
+          </div>
+        </div>
+      </div>
+      <div class="col gy-3">
+        <div class="card third-card">
+          <div class="row">
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto">
+              <img src="images/image-anne.jpg" class="rounded-circle border-0 profile-image " alt="image-colton">
+            </div>
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto card-title p-0">
+              <p class="name g-0">Anne Wallace</p>
+              <p class="verified g-0">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <p class="card-text">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Mohak Goel</a>.
+  </div>
+</body>
+
+</html>
