@@ -56,14 +56,15 @@
       margin-top: 1rem;
       color: hsl(300, 43%, 22%);
       background-color: hsl(300, 24%, 96%);
-      width: 27rem;
-      padding: 1rem 0 1rem 2rem;
+      width: auto;
+      padding: 1rem 15% 1rem 2rem;
       display: inline-block;
       text-align: left;
     }
 
     .second-review {
       margin-right: 3rem;
+      padding-right: 10%;
     }
 
     .first-review {
@@ -167,6 +168,34 @@
       }
       .third-card, .second-card{
         margin-top: 0;
+      }
+    }
+
+    @media (max-width:967px) {
+      .review{
+        padding-right: 5%;
+        width: 100%;
+      }
+      .second-review{
+        padding-right: 2.5%;
+        margin-right: 0;
+      }
+      .first-review{
+        padding-right: 5%;
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 1097px and min-width: 968px) {
+      .review{
+        padding-right: 10%;
+      }
+      .second-review{
+        padding-right: 5%;
+        margin-right: 2rem;
+      }
+      .first-review{
+        margin-right: 4rem;
       }
     }
 
